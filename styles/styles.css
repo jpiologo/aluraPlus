@@ -4,6 +4,7 @@
     --prim_color: #FFFFFF;
     --sec_color: #C0C0C0;
     --thir_color: #167BF7;
+    --efeitoHover: #0b3972;
     --background_color: #00030C;
     --fonte_principal: 'Inter', sans-serif;
 }
@@ -54,6 +55,10 @@ body {
     margin-bottom: 1em;
 }
 
+.container_botao:hover {
+    background-color: var(--efeitoHover);
+}
+
 .botao_sec {
     background-color: transparent;
     border: 2px solid var(--prim_color);
@@ -95,4 +100,57 @@ body {
 
 .container_descricao {
     padding: 8em;
+}
+
+.dispositivos_titulo {
+    font-size: 48px;
+    color: var(--prim_color);
+}
+
+.dispositivos_lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.lista_item {
+    font-size: 32px;
+    color: var(--prim_color);
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape_lista {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista_link a{
+    color: var(--prim_color);
+    text-decoration: none;
+}
+
+.rodape_texto {
+    margin: 1em 0;
+    padding-bottom: 24px;
+    color: var(--sec_color);
+}
+
+.lista_link a:hover {
+    color: var(--thir_color);
+}
+
+.lista_link a:active {
+    color: #0b3972;
 }
